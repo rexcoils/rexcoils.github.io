@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>REXCOILS</title>
+        <meta name="viewport" content="widht=device-widht, initial scale=1">
+        <link rel="stylesheet" href="asset/w3.css">
+    </head>
+    <body>
+        <div>
+            <img src="asset/rex.png" style="width: 100%;">
+        </div>
+        <div class="w3-bar w3-blue">
+            <button class="w3-bar-item w3-button" onclick="openKota('home')">HOME</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('sejarah')">SEJARAH</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('bahan')">BAHAN</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('harga')">HARGA</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('kontak')">KONTAK</button>
+        <div class="w3-dropdown-hover" style="float:right">
+            <button class="w3-button">MENU</button>
+            <div class="w3-dropdown-content w3-bar-block s3-card-4">
+                <button class="w3-bar-item w3-button" onclick="openKota('home')">HOME</button>
+                <button class="w3-bar-item w3-button" onclick="openKota('sejarah')">SEJARAH</button>
+                <button class="w3-bar-item w3-button" onclick="openKota('bahan')">BAHAN</button>
+                <button class="w3-bar-item w3-button" onclick="openKota('harga')">HARGA</button>
+                <button class="w3-bar-item w3-button" onclick="openKota('kontak')">KONTAK</button>
+            </div>
+        </div>
+        <button class="w3-bar-item w3-button" onclick="openKota('profil')">PROFIL</button>
+        </div>
+        <div id="home" class="w3-container kota w3-animate-fading" style="display:none">
+                <hr>
+                <img src="asset/bgrex.png" style="width: 100%">
+        </div>
+        <div id="sejarah" class="w3-container kota w3-animate-bottom" style="display:none;">
+            <center>
+                <h1 style="font-family:sans-serif;font-size:40px">REXCOILS</h1>
+                <p style="font-family:'Times New Roman';font-size:25px">Rexcoils didirikan pada tahun 2022, tepatnya pada bulan Mei.
+                Rexcoils berencana merubah logonya, <br>tetapi belum terlaksanakan karena stok stikernya masih banyak XD.</p>
+                <img src="asset/sej.png" style="width: 60%;">
+            </center>
+        </div>
+        <div id="bahan" class="w3-container kota w3-animate-top" style="display: none;">
+            <center>
+                <h2 style="font-family:sans-serif;font-size:40px">REXCOILS MENGGUNAKAN BAHAN APA SIH?</h2>
+                <p style="font-family: 'Times New Roman';font-size:25px">Bahan yang digunakan REXCOILS yaitu, Nicrome 80 high quality
+                <br>dengan ukuran inner 27 dan outer 38 sehinnga menghasilkan karakteristik flavor exstra boost
+                <br>dari segi Manis, dan Th.</p>
+                <img src="asset/bah.png" style="width: 60%;">
+            </center>
+        </div>
+        <div id="harga" class="w3-container kota w3-animate-zoom" style="display:none;">
+            <center>
+                <h2 style="font-family:sans-serif;font-size:40px">REXCOILS</h2>
+                <p style="font-family: 'Times New Roman';font-size:25px">Rexcoils memiliki satu varian coil yaitu Baby alien
+                <br>Baby alien di bandrol dengan harga 25k perpasang. Dengan harga yang cukup murah tapi kualitas tidak murahan
+                <br>terbukti dengan testimoni pembeli. Jikalau kalian suka dengan coil yang meletek belilah REXCOILS.</p>
+                <img src="asset/har.png" style="width: 100%;">   
+            </center>
+        </div>
+        <div id="kontak" class="w3-container kota w3-animate-opacity" style="display: none;">
+            <center>
+                <h2 style="font-family:sans-serif;font-size:40px">INFO PEMESANAN</h2>
+                <img src="asset/rexv1.png" style="width: 10%;">
+                <hr>
+                <a href="https://wa.me/6285157112419">WHATSAPP</a>
+                |
+                <a href="https://instagram.com/rexcoils">INSTAGRAM</a>
+            </center>   
+        </div>
+        <div id="profil" class="w3-container kota w3-animate-right" style="display:none;">
+            <hr>
+            <img src="asset/prof.png" style="width: 100%;">
+        </div>
+<script>
+    function openKota(namakota) {
+    var i;
+    var x = document.getElementsByClassName("kota");
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+    }
+    document.getElementById(namakota).style.display = "block";
+    }
+</script>
+    </body>
+</html>
